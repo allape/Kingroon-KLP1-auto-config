@@ -1,0 +1,61 @@
+[general]
+version = 4
+name = cache
+definition = kingroon_klp1
+
+[metadata]
+setting_version = 20
+type = quality
+quality_type = cache
+weight = -2
+global_quality = True
+
+[values]
+#打印平台附着
+adhesion_type = brim #打印平台附着类型
+skirt_line_count = 2
+brim_line_count = 16
+raft_speed = 75.0
+
+infill_enable_travel_optimization = False
+infill_support_angle = 50
+ironing_enabled = False
+max_skin_angle_for_expansion = 90
+retract_at_layer_change = False
+retraction_amount = 0.6
+retraction_hop_only_when_collides = False
+skin_no_small_gaps_heuristic = False
+skin_overlap = 10
+small_hole_max_size = 5.0
+#支撑
+support_enable = False
+support_type = everywhere
+support_wall_count = 1
+support_angle = 65
+support_brim_enable = True
+support_brim_width = 8.8
+support_interface_density = 70
+support_interface_enable = True
+support_interface_height = 0.6
+support_interface_pattern = lines
+support_interface_skip_height = 0.2
+support_roof_density = 70
+support_xy_distance = 0.5
+support_z_distance = 0.2
+support_use_towers = False
+support_xy_overrides_z = xy_overrides_z
+speed_support = 200
+speed_support_interface = 100
+minimum_interface_area = 2.0
+minimum_support_area = 2.0
+support_infill_rate = 10
+support_pattern = zigzag#支撑类型
+
+travel_avoid_other_parts = True#空驶避开已打印区域
+travel_avoid_supports = True  #空驶避开支撑
+travel_compensate_overlapping_walls_enabled = True
+ironing_only_highest_layer = True #熨烫最顶层
+material_flow_dependent_temperature = False
+
+small_feature_speed_factor = 60.0
+wall_thickness = =line_width*2
